@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @date 2020/12/3
  */
 @Service("stuService")
-//@Primary注解标识在类上，表示游戏注入的bean
+//@Primary注解标识在类上，表示优先注入的bean
 //@Primary
 public class StuServiceIml implements UserService {
     //注入UserDao
