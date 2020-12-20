@@ -3,6 +3,7 @@ package edu.nf.ch09.controll;
 import edu.nf.ch09.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
@@ -21,6 +22,7 @@ import javax.annotation.Resources;
 
     //从3.0后开始，每个层都有对应的注解来表示，作用和@Component注解时一样的，这样标识起来更加明确
 @Controller("controller")
+@Scope("prototype")
 public class UserController {
     @Autowired
     //通过@Qualifier指定Bean的id
